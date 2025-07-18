@@ -1,0 +1,98 @@
+[
+  {
+    "name": "main",
+    "children": [
+      {
+        "name": "B",
+        "id": 6
+      },
+      {
+        "name": "C",
+        "id": 12
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "q",
+        "target_port": "q",
+        "target": {
+          "name": "B",
+          "id": 6
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "r",
+        "target_port": "r",
+        "target": {
+          "name": "B",
+          "id": 6
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "q",
+        "target_port": "q",
+        "target": {
+          "name": "C",
+          "id": 12
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "r",
+        "target_port": "r",
+        "target": {
+          "name": "C",
+          "id": 12
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "s",
+        "target_port": "s",
+        "source": {
+          "name": "B",
+          "id": 6
+        },
+        "target": {
+          "name": "C",
+          "id": 12
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "t",
+        "target_port": "t",
+        "source": {
+          "name": "B",
+          "id": 6
+        },
+        "target": {
+          "name": "C",
+          "id": 12
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "C",
+          "id": 12
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "C",
+          "id": 12
+        }
+      }
+    ],
+    "file": "crs.drawio"
+  }
+]
