@@ -9,6 +9,10 @@
       {
         "name": "C",
         "id": 9
+      },
+      {
+        "name": "D",
+        "id": 13
       }
     ],
     "connections": [
@@ -31,12 +35,34 @@
         }
       },
       {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "D",
+          "id": 13
+        }
+      },
+      {
         "dir": 1,
         "source_port": "",
         "target_port": "",
         "source": {
           "name": "B",
           "id": 5
+        },
+        "target": {
+          "name": "C",
+          "id": 9
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "D",
+          "id": 13
         },
         "target": {
           "name": "C",
@@ -68,6 +94,15 @@
         "source": {
           "name": "B",
           "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "D",
+          "id": 13
         }
       }
     ],
