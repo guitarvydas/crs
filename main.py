@@ -3,14 +3,15 @@ sys.path.insert(0, 'pbp/kernel')
 import kernel0d as zd
 import b
 import c
+import d
 
 try:
     [palette, env] = zd.initialize_from_files (sys.argv[1], sys.argv[4:])
     b.install (palette)
     c.install (palette)
-    top = zd.start_bare (part_name=sys.argv[3], palette=palette, env=env)
-    zd.inject_mevent (top, "", "q")
-    zd.inject_mevent (top, "", "r")
+    d.install (palette)
+    # the system is started, then argv[2] is injected into the system 
+    top = zd.start (arg=sys.argv[2], part_name=sys.argv[3], palette=palette, env=env)
 except Exception as e:
     _, _, tb = sys.exc_info()
     while tb.tb_next:
