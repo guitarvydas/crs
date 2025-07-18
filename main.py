@@ -9,8 +9,8 @@ try:
     b.install (palette)
     c.install (palette)
     top = zd.start_bare (part_name=sys.argv[3], palette=palette, env=env)
-    zd.inject_mevent (top, "q", "")
-    zd.inject_mevent (top, "r", "")
+    zd.inject_mevent (top, "", "q")
+    zd.inject_mevent (top, "", "r")
 except Exception as e:
     _, _, tb = sys.exc_info()
     while tb.tb_next:

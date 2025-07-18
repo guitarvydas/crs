@@ -11,15 +11,18 @@ def instantiator (reg, owner, name, template_data, arg):
 
 def handler (eh, msg):
     # the mevent handler for B
-    if msg.port == "q":
-        zd.send (eh, "", "v", msg)
-    elif msg.port == "r":
-        zd.send (eh, "", "w", msg)
-    elif msg.port == "s":
-        zd.send (eh, "", "x", msg)
-    elif msg.port == "t":
-        zd.send (eh, "", "y", msg)
-    elif msg.port == "u":
-        zd.send (eh, "", "z", msg)
+    if msg.port == "":
+        if msg.datum.v == "q":
+            zd.send (eh, "", "v", msg)
+        elif msg.datum.v == "r":
+            zd.send (eh, "", "w", msg)
+        elif msg.datum.v == "s":
+            zd.send (eh, "", "x", msg)
+        elif msg.datum.v == "t":
+            zd.send (eh, "", "y", msg)
+        elif msg.datum.v == "u":
+            zd.send (eh, "", "z", msg)
+        else:
+            zd.send (eh, "#", f"{eh.name}: unrecognized datum.v {zd.format_mevent (msg)}", msg)
     else:
         zd.send (eh, "#", f"{eh.name}: unrecognized mevent {zd.format_mevent (msg)}", msg)
