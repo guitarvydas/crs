@@ -1,6 +1,80 @@
 [
   {
-    "name": "main",
+    "name": "v0",
+    "children": [
+      {
+        "name": "B",
+        "id": 5
+      },
+      {
+        "name": "C",
+        "id": 9
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "B",
+          "id": 5
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "C",
+          "id": 9
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "B",
+          "id": 5
+        },
+        "target": {
+          "name": "C",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "C",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "C",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "B",
+          "id": 5
+        }
+      }
+    ],
+    "file": "crs.drawio"
+  },
+  {
+    "name": "v1",
     "children": [
       {
         "name": "B",
@@ -104,6 +178,445 @@
           "name": "D",
           "id": 13
         }
+      }
+    ],
+    "file": "crs.drawio"
+  },
+  {
+    "name": "v2",
+    "children": [
+      {
+        "name": "C",
+        "id": 5
+      },
+      {
+        "name": "D",
+        "id": 9
+      },
+      {
+        "name": "B",
+        "id": 13
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "D",
+          "id": 9
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "C",
+          "id": 5
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "B",
+          "id": 13
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "D",
+          "id": 9
+        },
+        "target": {
+          "name": "C",
+          "id": 5
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "B",
+          "id": 13
+        },
+        "target": {
+          "name": "C",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "C",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "C",
+          "id": 5
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "B",
+          "id": 13
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "D",
+          "id": 9
+        }
+      }
+    ],
+    "file": "crs.drawio"
+  },
+  {
+    "name": "L0",
+    "children": [
+      {
+        "name": "B",
+        "id": 5
+      },
+      {
+        "name": "L1",
+        "id": 9
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "B",
+          "id": 5
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "L1",
+          "id": 9
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "B",
+          "id": 5
+        },
+        "target": {
+          "name": "L1",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "L1",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "L1",
+          "id": 9
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "B",
+          "id": 5
+        }
+      }
+    ],
+    "file": "crs.drawio"
+  },
+  {
+    "name": "L1",
+    "children": [
+      {
+        "name": "D",
+        "id": 8
+      },
+      {
+        "name": "L2",
+        "id": 12
+      },
+      {
+        "name": "D",
+        "id": 22
+      },
+      {
+        "name": "L2",
+        "id": 26
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "D",
+          "id": 8
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "L2",
+          "id": 12
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "D",
+          "id": 22
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "L2",
+          "id": 26
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "D",
+          "id": 8
+        },
+        "target": {
+          "name": "L2",
+          "id": 12
+        }
+      },
+      {
+        "dir": 1,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "D",
+          "id": 22
+        },
+        "target": {
+          "name": "L2",
+          "id": 26
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "L2",
+          "id": 12
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "L2",
+          "id": 12
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "D",
+          "id": 8
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "L2",
+          "id": 26
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "L2",
+          "id": 26
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "D",
+          "id": 22
+        }
+      },
+      {
+        "dir": 3,
+        "source_port": "✗",
+        "target_port": "✗"
+      }
+    ],
+    "file": "crs.drawio"
+  },
+  {
+    "name": "L2",
+    "children": [
+      {
+        "name": "C",
+        "id": 11
+      },
+      {
+        "name": "C",
+        "id": 22
+      },
+      {
+        "name": "C",
+        "id": 26
+      }
+    ],
+    "connections": [
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "C",
+          "id": 11
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "C",
+          "id": 22
+        }
+      },
+      {
+        "dir": 0,
+        "source_port": "",
+        "target_port": "",
+        "target": {
+          "name": "C",
+          "id": 26
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "C",
+          "id": 11
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "C",
+          "id": 11
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "C",
+          "id": 22
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "C",
+          "id": 22
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "",
+        "target_port": "",
+        "source": {
+          "name": "C",
+          "id": 26
+        }
+      },
+      {
+        "dir": 2,
+        "source_port": "✗",
+        "target_port": "✗",
+        "source": {
+          "name": "C",
+          "id": 26
+        }
+      },
+      {
+        "dir": 3,
+        "source_port": "✗",
+        "target_port": "✗"
+      },
+      {
+        "dir": 3,
+        "source_port": "✗",
+        "target_port": "✗"
       }
     ],
     "file": "crs.drawio"
